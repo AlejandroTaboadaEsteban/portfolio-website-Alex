@@ -1,0 +1,327 @@
+:root {
+  --primary-color: #2522227b;
+  --secondary-color: #ffffff;
+  --accent-color: #f5f5f5dc;
+  --text-color: black;
+  --link-color: black;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+}
+
+.App {
+  text-align: center;
+}
+
+section {
+  padding: 100px 20px 100px 20px; 
+  border-bottom: none;  
+}
+
+section h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  height: 80px;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation ul li {
+  margin: 0 25px;  
+}
+
+.navigation ul li a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  transition: transform 0.2s ease, font-size 0.2s ease;
+}
+
+.navigation ul li a:hover {
+  text-decoration: underline;
+  transform: scale(1.1);  
+}
+
+.home-section {
+  background-color: var(--accent-color);
+  text-align: center; 
+  position: relative;
+  overflow: hidden;
+}
+
+.particles-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.home-content {
+  display: flex;
+  margin-top: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.home-text-content {
+  width: 50%;
+  margin-top: 30px;
+}
+
+.home-flags {
+  display: flex;
+}
+
+.spain-flag {
+  width: 50%;
+}
+
+.spain-flag img,
+.galicia-flag img {
+  width: 100px; 
+  height: 70px; 
+}
+
+.home-image-content {
+  width: 50%;
+  margin-left: auto;
+}
+
+.home-image-content img {
+  width: 100%;
+  border-radius: 50%;
+  width: 220px; 
+  height: 220px; 
+  transition: transform 0.2s ease;
+}
+
+.home-image-content img:hover {
+  transform: scale(1.1); 
+}
+
+.home-section p {
+  font-size: 20px;
+}
+
+.about-me-section {
+  background-color: var(--secondary-color);
+}
+
+.about-me-content {
+  margin-top: 60px;
+}
+
+.about-me-text p {
+  padding-left: 25%;
+  padding-right: 30px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.about-me-text a {
+  color: var(--link-color);
+}
+
+.education-skills-section {
+  background-color: var(--accent-color);
+}
+
+.education-skills-content {
+  margin-top: 60px;
+  padding-left: 30px;
+  padding-right: 25%;
+  text-align: left;
+  font-size: 20px;
+}
+
+.education-content a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+li {
+  margin-bottom: 25px; 
+}
+
+.skills-content {
+  margin-top: 40px;
+}
+
+.image-group {
+  display: flex; 
+  justify-content: space-between; 
+  margin-top: 20px; 
+}
+
+.image-group img {
+  width: auto; 
+  height: 50px; 
+  transition: transform 0.5s ease;
+}
+
+.image-group img:hover {
+  transform: translateY(-20px); 
+}
+
+.experience-projects-section {
+  background-color: var(--secondary-color);
+}
+
+.experience-projects-content {
+  margin-top: 60px;
+  padding-right: 30px;
+  padding-left: 25%;
+  text-align: left;
+  font-size: 20px;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+}
+
+.experience-title:hover + .tooltip {
+  display: block;
+}
+
+.projects-content {
+  margin-top: 40px;
+}
+
+.projects-content a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.interests-section {
+  background-color: var(--accent-color);
+}
+
+.interests-content {
+  margin-top: 60px;
+  padding-left: 30px;
+  padding-right: 25%;
+  text-align: left;
+  font-size: 20px;
+}
+
+.contact-section {
+  margin-bottom: 100px;  
+}
+
+.contact-content {
+  margin-top: 60px;
+  padding-left: 25%;
+  padding-right: 30px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.contact-sentence {
+  font-size: 24px;
+  font-weight: bold; 
+  color: #3a3434;
+}
+
+.contact-mail a {
+  color: var(--link-color);
+  font-size: 20px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.contact-button {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 25px; 
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-right: 10px; 
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.contact-buttons img {
+  width: 25px;
+  height: 25px;
+  transform: translateY(4px);
+}
+
+.linkedin-button {
+  background-color: var(--text-color);
+  color: var(--secondary-color);
+}
+
+.github-button {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.home-section h2,
+.about-me-section h2,
+.education-skills-section h2,
+.experience-projects-section h2,
+.interests-section h2,
+.contact-section h2 {
+  font-size: 30px; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 900px) {
+  .home-content, 
+  .about-me-content, 
+  .education-skills-content, 
+  .experience-projects-content, 
+  .interests-content, 
+  .contact-content {
+    padding: 20px;
+  }
+
+  .home-text-content, 
+  .home-image-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .home-flags {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-flags div {
+    margin-bottom: 10px;
+  }
+}
